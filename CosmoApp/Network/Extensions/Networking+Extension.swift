@@ -10,10 +10,30 @@ import Combine
 
 extension Networking: Requester {
     
-    /// GET : Devices 
+    /// GET : Devices
     static func devices(completion: @escaping GenericResult<NetworkResult>) {
         let endPoint: EndPoint = .devices
         Networking.fetch(endPoint: endPoint, completion)
+    }
+}
+
+// MARK: - Using Async
+extension Networking {
+    
+    /// GET : Devices
+    static func devices() async throws -> [Device] {
+        let endPoint: EndPoint = .devices
+        guard let urlResquest = Networking.urlResquest(from: endPoint)?.url else {
+            return []
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: urlResquest)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200
+        else { throw NetworkingError.dataNotFound }
+        
+        let decodedData = try JSONDecoder().decode(NetworkResult.self, from: data)
+        return decodedData.devices ?? []
     }
 }
 
@@ -30,6 +50,7 @@ extension Networking {
       return URLSession.shared.dataTaskPublisher(for: urlResquest)
         .map(\.data)
         .decode(type: NetworkResult.self, decoder: JSONDecoder())
+        .receive(on: DispatchQueue.main)
         .map {
             guard let devices = $0.devices else { return [] }
             return devices

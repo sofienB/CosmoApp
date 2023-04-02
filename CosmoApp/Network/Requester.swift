@@ -11,4 +11,5 @@ import Combine
 protocol Requester {
     static func devices(completion: @escaping GenericResult<NetworkResult>)
     static func devices() -> AnyPublisher<[Device], Never>
+    static func devices() async throws -> [Device]
 }
