@@ -14,8 +14,8 @@ struct DevicesView: View {
         NavigationView {
             VStack {
                 switch devicesViewModel.state {
-                case .success (let devices):
-                    GridView(devices: devices)
+                case .success (let cells):
+                    GridView<GridCell>(cells: cells as? [GridCell])
                 case .loading:
                     ProgressView()
                 case .failed(_):

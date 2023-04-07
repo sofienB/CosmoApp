@@ -15,7 +15,8 @@ struct CosmoAppApp: App {
         WindowGroup {
             let devicesViewModel = DevicesViewModel()
             DevicesView(devicesViewModel: devicesViewModel)
-                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

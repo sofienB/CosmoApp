@@ -54,8 +54,8 @@ struct Device: Codable {
         try? serial?.encode(to: encoder)
         try? output?.encode(to: encoder)
         try? product?.encode(to: encoder)
-        //try macAddress.encode(to: encoder)
-        //try firmwareVersion.encode(to: encoder)
+        try macAddress.encode(to: encoder)
+        try firmwareVersion.encode(to: encoder)
         try? installationMode?.encode(to: encoder)
     }
 }

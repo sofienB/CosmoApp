@@ -20,4 +20,17 @@ struct Tools {
             return "placeholder"
         }
     }
+    
+    static func imageName(of lightMode: LightMode) -> String {
+        switch lightMode {
+        case .off:
+            return ""
+        case .position:
+            return "position"
+        case .warning:
+            return "warning"
+        case .both:
+            return "both"
+        }
+    }
 }

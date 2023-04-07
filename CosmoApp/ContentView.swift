@@ -18,12 +18,16 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
+            LazyVGrid(columns: [GridItem(.adaptive (minimum: 100))]) {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        let device = Device(macAddress: "F3E1F23D4D",
+                                            firmwareVersion: "1.2.4",
+                                            product: "Ride")
+
+                        CardView(cell: GridCell(title: device.model.rawValue, subTitle: ""))
                     }
                 }
                 .onDelete(perform: deleteItems)

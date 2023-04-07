@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C8E6DA129DCBF3D00C6B60D /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */; };
 		4CCEFF6F29D89AA500E82316 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF6E29D89AA500E82316 /* DevicesView.swift */; };
 		4CCEFF7129D8C2FB00E82316 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7029D8C2FB00E82316 /* CardView.swift */; };
 		4CCEFF7329D8D3A700E82316 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7229D8D3A700E82316 /* Tools.swift */; };
 		4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */; };
 		4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7629D9E5FA00E82316 /* GridView.swift */; };
+		4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7829DA370C00E82316 /* Indicator.swift */; };
 		4CD1166929D6384100626FB6 /* CosmoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166829D6384100626FB6 /* CosmoAppApp.swift */; };
 		4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166A29D6384100626FB6 /* ContentView.swift */; };
 		4CD1166D29D6384300626FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1166C29D6384300626FB6 /* Assets.xcassets */; };
@@ -65,11 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
 		4CCEFF6E29D89AA500E82316 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		4CCEFF7029D8C2FB00E82316 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4CCEFF7229D8D3A700E82316 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		4CCEFF7629D9E5FA00E82316 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		4CCEFF7829DA370C00E82316 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		4CD1166529D6384100626FB6 /* CosmoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD1166829D6384100626FB6 /* CosmoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmoAppApp.swift; sourceTree = "<group>"; };
 		4CD1166A29D6384100626FB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C8E6D9F29DCBDA400C6B60D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
+				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
+				4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */,
+				4CCEFF7629D9E5FA00E82316 /* GridView.swift */,
+				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
+				4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4CD1165C29D6384100626FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -156,19 +173,16 @@
 		4CD1166729D6384100626FB6 /* CosmoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C8E6D9F29DCBDA400C6B60D /* Views */,
 				4CD116B329D7863A00626FB6 /* Network */,
 				4CD1169729D6385700626FB6 /* DataModel */,
 				4CD1166829D6384100626FB6 /* CosmoAppApp.swift */,
 				4CD1166A29D6384100626FB6 /* ContentView.swift */,
-				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
 				4CD1166C29D6384300626FB6 /* Assets.xcassets */,
 				4CD1167129D6384300626FB6 /* Persistence.swift */,
 				4CD1167329D6384300626FB6 /* CosmoApp.xcdatamodeld */,
 				4CD1166E29D6384300626FB6 /* Preview Content */,
-				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
 				4CCEFF7229D8D3A700E82316 /* Tools.swift */,
-				4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */,
-				4CCEFF7629D9E5FA00E82316 /* GridView.swift */,
 			);
 			path = CosmoApp;
 			sourceTree = "<group>";
@@ -395,8 +409,10 @@
 				4CD116A629D648B400626FB6 /* LightMode.swift in Sources */,
 				4CD116A129D6484000626FB6 /* Output.swift in Sources */,
 				4CD116B929D78CA200626FB6 /* HTTPMethod.swift in Sources */,
+				4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */,
 				4CD116C229D78EE000626FB6 /* URLSession+Extension.swift in Sources */,
 				4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */,
+				4C8E6DA129DCBF3D00C6B60D /* DeviceDetailViewModel.swift in Sources */,
 				4CD1166929D6384100626FB6 /* CosmoAppApp.swift in Sources */,
 				4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */,
 				4CCEFF6F29D89AA500E82316 /* DevicesView.swift in Sources */,
@@ -579,8 +595,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,8 +624,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
