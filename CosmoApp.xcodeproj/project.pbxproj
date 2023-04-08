@@ -12,7 +12,7 @@
 		4CCEFF7129D8C2FB00E82316 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */; };
 		4CCEFF7329D8D3A700E82316 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7229D8D3A700E82316 /* Tools.swift */; };
 		4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */; };
-		4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7629D9E5FA00E82316 /* GridView.swift */; };
+		4CCEFF7729D9E5FA00E82316 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */; };
 		4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7829DA370C00E82316 /* Indicator.swift */; };
 		4CD1166929D6384100626FB6 /* CosmoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166829D6384100626FB6 /* CosmoAppApp.swift */; };
 		4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166A29D6384100626FB6 /* ContentView.swift */; };
@@ -48,7 +48,7 @@
 		4CD116C829D7A5E800626FB6 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD116C729D7A5E800626FB6 /* NetworkingTests.swift */; };
 		4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD116C929D83C5100626FB6 /* Requester.swift */; };
 		4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84629E1707B00C594FA /* CellRepresentable.swift */; };
-		4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84829E170AC00C594FA /* GridCell.swift */; };
+		4CD5B84929E170AC00C594FA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84829E170AC00C594FA /* Cell.swift */; };
 		4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */; };
 		4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */; };
 /* End PBXBuildFile section */
@@ -76,7 +76,7 @@
 		4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
 		4CCEFF7229D8D3A700E82316 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
-		4CCEFF7629D9E5FA00E82316 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		4CCEFF7829DA370C00E82316 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		4CD1166529D6384100626FB6 /* CosmoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD1166829D6384100626FB6 /* CosmoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmoAppApp.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		4CD116C729D7A5E800626FB6 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		4CD116C929D83C5100626FB6 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		4CD5B84629E1707B00C594FA /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
-		4CD5B84829E170AC00C594FA /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		4CD5B84829E170AC00C594FA /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeviceView.swift; sourceTree = "<group>"; };
 		4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +150,7 @@
 			children = (
 				4CD5B84529E1705600C594FA /* CellView */,
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
-				4CCEFF7629D9E5FA00E82316 /* GridView.swift */,
+				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
 				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
 				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 			);
@@ -280,7 +280,7 @@
 				4CD5B84629E1707B00C594FA /* CellRepresentable.swift */,
 				4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */,
 				4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */,
-				4CD5B84829E170AC00C594FA /* GridCell.swift */,
+				4CD5B84829E170AC00C594FA /* Cell.swift */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -451,8 +451,8 @@
 				4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */,
 				4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */,
 				4CCEFF7129D8C2FB00E82316 /* CardCellView.swift in Sources */,
-				4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */,
-				4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */,
+				4CCEFF7729D9E5FA00E82316 /* CollectionView.swift in Sources */,
+				4CD5B84929E170AC00C594FA /* Cell.swift in Sources */,
 				4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */,
 				4CD116A429D6489400626FB6 /* Model.swift in Sources */,
 			);

@@ -11,11 +11,9 @@ struct DetailDeviceView: View {
     @StateObject var deviceDetailViewModel: DeviceDetailViewModel
     
     var body: some View {
-        NavigationView {
-            GridView<GridCell>(cells: deviceDetailViewModel.details,
-                               numberOfCell: 2)
-        }
-        .navigationTitle(deviceDetailViewModel.device?.model?.rawValue ?? "")
+        CollectionView<Cell>(cells: deviceDetailViewModel.details,
+                           numberOfCell: 2)
+            .navigationTitle(deviceDetailViewModel.device?.model?.rawValue ?? "")
     }
 }
 struct DetailDeviceView_Previews: PreviewProvider {

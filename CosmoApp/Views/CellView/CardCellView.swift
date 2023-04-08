@@ -9,8 +9,7 @@ import SwiftUI
 
 struct CardCellView: View {
     let cell: (any CellRepresentable)!
-    let width: CGFloat
-    
+
     var body: some View {
         VStack() {
             Spacer()
@@ -39,22 +38,21 @@ struct CardCellView: View {
         .background(.quaternary)
         .cornerRadius(10)
         .foregroundColor(.blue)
-        .frame(width:width, height: width)
     }
 }
 
 struct CardCellView_Previews: PreviewProvider {
     static var previews: some View {
-        var _: GridCell = GridCell(title:"vision",
+        var _: Cell = Cell(title:"vision",
                                    subTitle: "VISION",
                                    asImage: true,
                                    drawableAs: .grid)
         
-        let cell2: GridCell = GridCell(title:"AUTO",
+        let cell2: Cell = Cell(title:"AUTO",
                                        subTitle: "ON",
                                        asImage: false,
                                        drawableAs: .grid)
-        CardCellView(cell: cell2, width: 130)
+        CardCellView(cell: cell2)
             .previewLayout(.fixed(width: 130, height: 130))
     }
 }

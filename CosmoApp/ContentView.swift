@@ -27,7 +27,7 @@ struct ContentView: View {
                                             firmwareVersion: "1.2.4",
                                             product: "Ride")
 
-                        CardCellView(cell: GridCell(title: device.model.rawValue, subTitle: "", drawableAs: .grid), width: 180)
+                        CardCellView(cell: Cell(title: device.model.rawValue, subTitle: "", drawableAs: .grid))
                     }
                 }
                 .onDelete(perform: deleteItems)

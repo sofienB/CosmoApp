@@ -15,7 +15,7 @@ struct DevicesView: View {
             ZStack {
                 switch devicesViewModel.state {
                 case .success (let cells):
-                    GridView<GridCell>(cells: cells as? [GridCell],
+                    CollectionView<Cell>(cells: cells as? [Cell],
                                        numberOfCell: 3)
                 case .loading:
                     ProgressView()

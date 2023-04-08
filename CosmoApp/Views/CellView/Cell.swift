@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GridCell: CellRepresentable {
+struct Cell: CellRepresentable {
     let id = UUID() // Identifiable
 
     var title: String
@@ -30,7 +30,7 @@ struct GridCell: CellRepresentable {
     }
 
     //MARK: Equatable
-    public static func == (lhs: GridCell, rhs: GridCell) -> Bool {
+    public static func == (lhs: Cell, rhs: Cell) -> Bool {
         return lhs.id == rhs.id
     }
 }
