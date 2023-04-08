@@ -50,6 +50,7 @@
 		4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84629E1707B00C594FA /* CellRepresentable.swift */; };
 		4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84829E170AC00C594FA /* GridCell.swift */; };
 		4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */; };
+		4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		4CD5B84629E1707B00C594FA /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
 		4CD5B84829E170AC00C594FA /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeviceView.swift; sourceTree = "<group>"; };
+		4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +150,6 @@
 			children = (
 				4CD5B84529E1705600C594FA /* CellView */,
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
-				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
 				4CCEFF7629D9E5FA00E82316 /* GridView.swift */,
 				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
 				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
@@ -277,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				4CD5B84629E1707B00C594FA /* CellRepresentable.swift */,
+				4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */,
+				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
 				4CD5B84829E170AC00C594FA /* GridCell.swift */,
 			);
 			path = CellView;
@@ -445,6 +448,7 @@
 				4CD1167529D6384300626FB6 /* CosmoApp.xcdatamodeld in Sources */,
 				4CD116A829D648C900626FB6 /* InstallationMode.swift in Sources */,
 				4CD116B729D78AE400626FB6 /* EndPoint.swift in Sources */,
+				4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */,
 				4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */,
 				4CCEFF7129D8C2FB00E82316 /* CardView.swift in Sources */,
 				4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */,
