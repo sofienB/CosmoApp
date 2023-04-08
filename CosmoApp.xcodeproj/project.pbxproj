@@ -47,6 +47,9 @@
 		4CD116C629D7990900626FB6 /* BaseUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD116C529D7990900626FB6 /* BaseUrlTests.swift */; };
 		4CD116C829D7A5E800626FB6 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD116C729D7A5E800626FB6 /* NetworkingTests.swift */; };
 		4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD116C929D83C5100626FB6 /* Requester.swift */; };
+		4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84629E1707B00C594FA /* CellRepresentable.swift */; };
+		4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84829E170AC00C594FA /* GridCell.swift */; };
+		4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,9 @@
 		4CD116C529D7990900626FB6 /* BaseUrlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrlTests.swift; sourceTree = "<group>"; };
 		4CD116C729D7A5E800626FB6 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		4CD116C929D83C5100626FB6 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		4CD5B84629E1707B00C594FA /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		4CD5B84829E170AC00C594FA /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +146,12 @@
 		4C8E6D9F29DCBDA400C6B60D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4CD5B84529E1705600C594FA /* CellView */,
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
 				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
-				4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */,
 				4CCEFF7629D9E5FA00E82316 /* GridView.swift */,
 				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
-				4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */,
+				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 		4CD1166729D6384100626FB6 /* CosmoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CD5B84C29E176C600C594FA /* ViewModels */,
 				4C8E6D9F29DCBDA400C6B60D /* Views */,
 				4CD116B329D7863A00626FB6 /* Network */,
 				4CD1169729D6385700626FB6 /* DataModel */,
@@ -264,6 +271,24 @@
 				4CD116C129D78EE000626FB6 /* URLSession+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4CD5B84529E1705600C594FA /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5B84629E1707B00C594FA /* CellRepresentable.swift */,
+				4CD5B84829E170AC00C594FA /* GridCell.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		4CD5B84C29E176C600C594FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */,
+				4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +424,7 @@
 				4CD116AA29D648DA00626FB6 /* Device.swift in Sources */,
 				4CD1169D29D6433900626FB6 /* LightValue.swift in Sources */,
 				4CD116B529D78A8500626FB6 /* BaseUrl.swift in Sources */,
+				4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */,
 				4CD116C029D78DD500626FB6 /* Networking.swift in Sources */,
 				4CD1167229D6384300626FB6 /* Persistence.swift in Sources */,
 				4CD116AC29D64A3900626FB6 /* NetworkResult.swift in Sources */,
@@ -422,6 +448,8 @@
 				4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */,
 				4CCEFF7129D8C2FB00E82316 /* CardView.swift in Sources */,
 				4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */,
+				4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */,
+				4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */,
 				4CD116A429D6489400626FB6 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

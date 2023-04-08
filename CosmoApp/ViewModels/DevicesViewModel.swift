@@ -34,8 +34,10 @@ final class DevicesViewModel: ObservableObject {
         var representables = [any CellRepresentable]()
         devices.forEach { device in
             representables.append(GridCell(title: Tools.imageName(of: device.model),
-                                          subTitle: device.product ?? device.model.rawValue,
-                                          asImage: true))
+                                           subTitle: device.product ?? device.model.rawValue,
+                                           asImage: true,
+                                           context: device,
+                                           drawableAs: .grid))
         }
         
         return representables

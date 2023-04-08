@@ -9,45 +9,52 @@ import SwiftUI
 
 struct CardView: View {
     let cell: (any CellRepresentable)!
-
+    let width: CGFloat
+    
     var body: some View {
         VStack() {
+            Spacer()
             if cell.asImage {
                 Image(cell.title)
                     .resizable()
                     .scaledToFill()
-                    //.frame(width: 120.0, height: 100.0)
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 80)
+                    .frame(minWidth: 100, minHeight: 80)
                     .clipped()
             } else {
+                Spacer()
                 Text(cell.title)
-                    .font(.custom("Avenir", size: 24))
+                    .font(.custom("Copperplate", size: 38))
                     .fontWeight(.bold)
-                    .frame(width: 120, height: 80)
+                    .frame(minWidth: 100, maxWidth: .infinity,
+                           minHeight: 70, maxHeight: .infinity)
+                Spacer()
             }
-            //Text(device.product ?? device.model.rawValue)
             Text(cell.subTitle)
-                .font(.custom("Avenir", size: 16))//30))
+                .font(.custom("Copperplate", size: 25))
                 .fontWeight(.bold)
-                .padding(.bottom,11)
+                .frame(minWidth: 100, maxWidth: .infinity,
+                       minHeight: 50, maxHeight: 50)
         }
         .background(.quaternary)
         .cornerRadius(10)
         .foregroundColor(.blue)
+        .frame(width:width, height: width)
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        var cell: GridCell = GridCell(title:"vision",
-                                      subTitle: "VISION",
-                                      asImage: true)
+        var _: GridCell = GridCell(title:"vision",
+                                   subTitle: "VISION",
+                                   asImage: true,
+                                   drawableAs: .grid)
         
-        var cell2: GridCell = GridCell(title:"AUTO",
-                                      subTitle: "ON",
-                                      asImage: false)
-        CardView(cell: cell2)
-            .previewLayout(.fixed(width: 100, height: 120))
+        let cell2: GridCell = GridCell(title:"AUTO",
+                                       subTitle: "ON",
+                                       asImage: false,
+                                       drawableAs: .grid)
+        CardView(cell: cell2, width: 130)
+            .previewLayout(.fixed(width: 130, height: 130))
     }
 }

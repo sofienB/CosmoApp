@@ -60,7 +60,7 @@ struct Device: Codable {
     }
 }
 
-extension Device: Hashable {
+extension Device: Context {
     var identifier: String {
         return UUID().uuidString
     }
@@ -72,4 +72,8 @@ extension Device: Hashable {
     public static func == (lhs: Device, rhs: Device) -> Bool {
         return lhs.identifier == rhs.identifier
     }
+}
+
+protocol Context: Hashable {
+    
 }

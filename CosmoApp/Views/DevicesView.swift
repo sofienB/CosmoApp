@@ -12,10 +12,11 @@ struct DevicesView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ZStack {
                 switch devicesViewModel.state {
                 case .success (let cells):
-                    GridView<GridCell>(cells: cells as? [GridCell])
+                    GridView<GridCell>(cells: cells as? [GridCell],
+                                       numberOfCell: 3)
                 case .loading:
                     ProgressView()
                 case .failed(_):
