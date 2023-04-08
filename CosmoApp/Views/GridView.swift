@@ -33,12 +33,16 @@ struct GridView<Representable: CellRepresentable>: View {
         return ForEach(self.cells, id: \.id) { cell in
             NavigationLink(
                 destination:
-                        DetailDeviceView(deviceDetailViewModel:
-                                            DeviceDetailViewModel(device: cell.context as? Device))
+                    DetailDeviceView(deviceDetailViewModel:
+                                        DeviceDetailViewModel(device: cell.context as? Device))
                 , //isActive: ,
                 label: {
-                    CardView(cell: cell, width: width)
-                        
+                    switch cell.drawableAs {
+                    case .grid:
+                        CardCellView(cell: cell, width: width)
+                    case .list:
+                        LinearCellView(cell: cell)
+                    }
                 }
             )
         }
@@ -50,7 +54,7 @@ struct GridView_Previews: PreviewProvider {
         let cell1 = GridCell(title:"AUTO", subTitle: "ON", drawableAs: .grid)
         let cell2 = GridCell(title:"vision", subTitle: "VISION", asImage: true, drawableAs: .grid)
         let cell3 = GridCell(title:"vision", subTitle: "VISION", asImage: true, drawableAs: .grid)
-        let cell4 = GridCell(title:"AUTO", subTitle: "OFF", drawableAs: .grid)
+        let cell4 = GridCell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
 
         GridView(cells: [cell1, cell2, cell3, cell4])
     }

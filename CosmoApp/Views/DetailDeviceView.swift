@@ -15,7 +15,7 @@ struct DetailDeviceView: View {
             GridView<GridCell>(cells: deviceDetailViewModel.details,
                                numberOfCell: 2)
         }
-        //.navigationTitle(deviceDetailViewModel.device.model.rawValue)
+        .navigationTitle(deviceDetailViewModel.device?.model?.rawValue ?? "")
     }
 }
 struct DetailDeviceView_Previews: PreviewProvider {

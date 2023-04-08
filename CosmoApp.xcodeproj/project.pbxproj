@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C8E6DA129DCBF3D00C6B60D /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */; };
 		4CCEFF6F29D89AA500E82316 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF6E29D89AA500E82316 /* DevicesView.swift */; };
-		4CCEFF7129D8C2FB00E82316 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7029D8C2FB00E82316 /* CardView.swift */; };
+		4CCEFF7129D8C2FB00E82316 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */; };
 		4CCEFF7329D8D3A700E82316 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7229D8D3A700E82316 /* Tools.swift */; };
 		4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */; };
 		4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7629D9E5FA00E82316 /* GridView.swift */; };
@@ -73,7 +73,7 @@
 /* Begin PBXFileReference section */
 		4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
 		4CCEFF6E29D89AA500E82316 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
-		4CCEFF7029D8C2FB00E82316 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
 		4CCEFF7229D8D3A700E82316 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		4CCEFF7629D9E5FA00E82316 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 			children = (
 				4CD5B84629E1707B00C594FA /* CellRepresentable.swift */,
 				4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */,
-				4CCEFF7029D8C2FB00E82316 /* CardView.swift */,
+				4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */,
 				4CD5B84829E170AC00C594FA /* GridCell.swift */,
 			);
 			path = CellView;
@@ -450,7 +450,7 @@
 				4CD116B729D78AE400626FB6 /* EndPoint.swift in Sources */,
 				4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */,
 				4CD116CA29D83C5100626FB6 /* Requester.swift in Sources */,
-				4CCEFF7129D8C2FB00E82316 /* CardView.swift in Sources */,
+				4CCEFF7129D8C2FB00E82316 /* CardCellView.swift in Sources */,
 				4CCEFF7729D9E5FA00E82316 /* GridView.swift in Sources */,
 				4CD5B84929E170AC00C594FA /* GridCell.swift in Sources */,
 				4CD5B84729E1707B00C594FA /* CellRepresentable.swift in Sources */,

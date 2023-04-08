@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardCellView: View {
     let cell: (any CellRepresentable)!
     let width: CGFloat
     
@@ -43,7 +43,7 @@ struct CardView: View {
     }
 }
 
-struct CardView_Previews: PreviewProvider {
+struct CardCellView_Previews: PreviewProvider {
     static var previews: some View {
         var _: GridCell = GridCell(title:"vision",
                                    subTitle: "VISION",
@@ -54,7 +54,7 @@ struct CardView_Previews: PreviewProvider {
                                        subTitle: "ON",
                                        asImage: false,
                                        drawableAs: .grid)
-        CardView(cell: cell2, width: 130)
+        CardCellView(cell: cell2, width: 130)
             .previewLayout(.fixed(width: 130, height: 130))
     }
 }
