@@ -53,6 +53,7 @@ struct CollectionView<Representable: CellRepresentable>: View {
                             }
                     }
                 )
+                .disabled(cell.context == nil)
             }
         }
     }
@@ -73,6 +74,7 @@ struct CollectionView<Representable: CellRepresentable>: View {
                             }
                     }
                 )
+                .disabled(cell.context == nil)
             }
         }
     }
