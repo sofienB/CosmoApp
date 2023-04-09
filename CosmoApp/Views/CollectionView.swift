@@ -11,7 +11,9 @@ struct CollectionView<Representable: CellRepresentable>: View {
     let cells: [Representable]!
     var numberOfCell = 3 // default value
     @State var canNavigate: Bool = false
-    
+    @State var selectedCell: (any Context)?
+    { didSet { canNavigate = selectedCell != nil } }
+
     private var columnGrid: [GridItem] {
         Array.init(repeating: GridItem(.flexible()),
                    count: self.numberOfCell)
@@ -20,16 +22,16 @@ struct CollectionView<Representable: CellRepresentable>: View {
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            let spacing: CGFloat = numberOfCell == 2 ? 5 : 10
-            let insets = EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+            let insets = EdgeInsets(top: 5, leading: 5,
+                                    bottom: 5, trailing: 5)
         
             // Draw grid cell if needed.
-            LazyVGrid(columns: self.columnGrid, spacing: spacing) {
+            LazyVGrid(columns: self.columnGrid, spacing: 5) {
                 loopGridCell(width: .zero)
             }.padding(insets)
         
             // Draw linear cell if needed.
-            LazyVGrid(columns: self.linearCellItem, spacing: spacing) {
+            LazyVGrid(columns: self.linearCellItem, spacing: 5) {
                 loopLinearCell(width: .zero)
             }.padding(insets)
         }
@@ -41,13 +43,13 @@ struct CollectionView<Representable: CellRepresentable>: View {
                 NavigationLink(
                     destination:
                         DetailDeviceView(deviceDetailViewModel:
-                                            DeviceDetailViewModel(device: cell.context as? Device)),
+                                            DeviceDetailViewModel(device: selectedCell as? Device)),
                     isActive: $canNavigate,
                     label: {
                         CardCellView(cell: cell)
                             .onTapGesture {
                                 // We can navigate only if context exist.
-                                canNavigate = cell.context != nil
+                                selectedCell = cell.context
                             }
                     }
                 )
@@ -57,21 +59,21 @@ struct CollectionView<Representable: CellRepresentable>: View {
     
     private func loopLinearCell(width: CGFloat) -> some View {
         return ForEach(self.cells, id: \.id) { cell in
-            NavigationLink(
-                destination:
-                    DetailDeviceView(deviceDetailViewModel:
-                                        DeviceDetailViewModel(device: cell.context as? Device)),
-                isActive: $canNavigate,
-                label: {
-                    if cell.drawableAs == .list {
+            if cell.drawableAs == .list {
+                NavigationLink(
+                    destination:
+                        DetailDeviceView(deviceDetailViewModel:
+                                            DeviceDetailViewModel(device: selectedCell as? Device)),
+                    isActive: $canNavigate,
+                    label: {
                         LinearCellView(cell: cell)
                             .onTapGesture {
                                 // We can navigate only if context exist.
-                                canNavigate = cell.context != nil
+                                selectedCell = cell.context
                             }
                     }
-                }
-            )
+                )
+            }
         }
     }
 }
@@ -82,7 +84,6 @@ struct GridView_Previews: PreviewProvider {
         let cell2 = Cell(title:"vision", subTitle: "VISION", asImage: true, drawableAs: .grid)
         let cell3 = Cell(title:"vision", subTitle: "VISION", asImage: true, drawableAs: .grid)
         let cell4 = Cell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
-
         let cell5 = Cell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
         let cell6 = Cell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
         let cell7 = Cell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
@@ -92,7 +93,7 @@ struct GridView_Previews: PreviewProvider {
         let cell11 = Cell(title:"frameware", subTitle: "7.23.42", drawableAs: .list)
         
         CollectionView(cells: [cell1, cell2, cell3, cell4,
-                         cell5, cell6, cell7, cell8,
-                         cell9, cell10, cell11])
+                               cell5, cell6, cell7, cell8,
+                               cell9, cell10, cell11])
     }
 }

@@ -150,9 +150,9 @@
 			children = (
 				4CD5B84529E1705600C594FA /* CellView */,
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
+				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
 				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
-				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				4CD5B84629E1707B00C594FA /* CellRepresentable.swift */,
+				4CD5B84829E170AC00C594FA /* Cell.swift */,
 				4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */,
 				4CCEFF7029D8C2FB00E82316 /* CardCellView.swift */,
-				4CD5B84829E170AC00C594FA /* Cell.swift */,
 			);
 			path = CellView;
 			sourceTree = "<group>";

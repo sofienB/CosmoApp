@@ -13,7 +13,7 @@ struct LinearCellView: View {
     var body: some View {
         VStack {
             Text(cell.title)
-                .font(.custom("Copperplate", size: 25))
+                .font(.custom("Copperplate", size: 22))
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity,
                        alignment: .leading)
@@ -21,7 +21,7 @@ struct LinearCellView: View {
                 .font(.custom("Copperplate", size: 16))
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity,
-                       alignment: .leading)
+                       alignment: .trailing)
         }
         .padding(.all, 5)
         .background(.quaternary)

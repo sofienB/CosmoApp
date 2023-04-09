@@ -24,7 +24,7 @@ struct Tools {
     static func imageName(of lightMode: LightMode) -> String {
         switch lightMode {
         case .off:
-            return ""
+            return "off"
         case .position:
             return "position"
         case .warning:
