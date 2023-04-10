@@ -128,7 +128,6 @@
 		4CD5B85329E2D91100C594FA /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		4CD5B85529E2D93500C594FA /* BluetoothState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothState.swift; sourceTree = "<group>"; };
 		4CD5B85929E2D95500C594FA /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
-		4CD5B85F29E2EC6B00C594FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4CD5B86129E4396200C594FA /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothParcer.swift; sourceTree = "<group>"; };
 		4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDevicesViewModel.swift; sourceTree = "<group>"; };
@@ -196,7 +195,6 @@
 		4CD1166729D6384100626FB6 /* CosmoApp */ = {
 			isa = PBXGroup;
 			children = (
-				4CD5B85F29E2EC6B00C594FA /* Info.plist */,
 				4CD5B85229E2D90400C594FA /* Bluetooth */,
 				4CD5B85129E2CE9100C594FA /* AppSettings */,
 				4CD5B84C29E176C600C594FA /* ViewModels */,
@@ -692,7 +690,6 @@
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CosmoApp/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth used to find and connect device to product";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -724,7 +721,6 @@
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CosmoApp/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth used to find and connect device to product";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
