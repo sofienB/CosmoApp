@@ -5,14 +5,14 @@
 //  Created by Sofien Benharchache on 04/04/2023.
 //
 
-import Foundation
+import SwiftUI
 
 final class DeviceDetailViewModel: ObservableObject {
     @Published var device: Device?
     var details = [Cell]()
     
-    init(device: Device!) {
-        self.device = device
+    init(device: Binding<((any Context)?)>) {
+        self.device = device.wrappedValue as? Device
         self.configureDetails()
     }
     

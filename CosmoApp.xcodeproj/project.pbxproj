@@ -167,8 +167,8 @@
 				4CD5B84529E1705600C594FA /* CellView */,
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
 				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
-				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
 				4CD5B84F29E242E900C594FA /* NearbyDevicesView.swift */,
+				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

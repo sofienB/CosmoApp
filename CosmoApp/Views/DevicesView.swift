@@ -17,7 +17,7 @@ struct DevicesView: View {
                 switch devicesViewModel.state {
                 case .success (let cells):
                     CollectionView<Cell>(cells: cells as? [Cell],
-                                       numberOfCell: 3)
+                                         numberOfCell: 3)
                 case .loading:
                     ProgressView()
                 case .failed(_):

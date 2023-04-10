@@ -43,7 +43,7 @@ struct CollectionView<Representable: CellRepresentable>: View {
                 NavigationLink(
                     destination:
                         DetailDeviceView(deviceDetailViewModel:
-                                            DeviceDetailViewModel(device: selectedCell as? Device)),
+                                .constant(DeviceDetailViewModel(device:  $selectedCell))),
                     isActive: $canNavigate,
                     label: {
                         CardCellView(cell: cell)
@@ -64,7 +64,7 @@ struct CollectionView<Representable: CellRepresentable>: View {
                 NavigationLink(
                     destination:
                         DetailDeviceView(deviceDetailViewModel:
-                                            DeviceDetailViewModel(device: selectedCell as? Device)),
+                                .constant(DeviceDetailViewModel(device: $selectedCell))),
                     isActive: $canNavigate,
                     label: {
                         LinearCellView(cell: cell)
