@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  CosmoApp
+
+  Created by Sofien Benharchache on 10/04/2023.
+  
+*/
+"devices" = "Devices";
+"my devices" = "My devices";
+"connected" = "Connected";
+"connecting" = "Connecting";
+"disconnected" = "Disconnected";
+"no device found" = "No device found";
+"nearby devices" = "Nearby devices";
+"cancel" = "Cancel";
+"ok" = "OK";
+"unkown device" = "Unkown device";
+"brake" = "Brake";
+"mode" = "Mode";
+"auto" = "Auto";
+"light" = "light";
+"firmwareVersion" = "Firmware version";
+"macAddress" = "Mac address";
+"serial" = "Serial";
+"product" = "Product";
+"installation" = "Installation";
+"on" = "on";
+"off" = "off";
+"please enable bluetooth to search devices" = "Please enable bluetooth to search devices";
+"an error occurred" = "An error occurred";

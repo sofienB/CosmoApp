@@ -25,7 +25,7 @@ final class DeviceDetailViewModel: ObservableObject {
                             drawableAs: Drawable.grid))
 
         if let brakeLight = device.output?.brakeLight {
-            details.append(Cell(title: NSLocalizedString("brake", comment: ""),
+            details.append(Cell(title: "brake",
                                 subTitle: brakeLight ? NSLocalizedString("on", comment: "")
                                                      : NSLocalizedString("off", comment: ""),
                                 asImage: true,

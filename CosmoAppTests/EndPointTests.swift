@@ -19,7 +19,7 @@ final class EndPointTests: XCTestCase {
     func testEndPoint_Devices() throws {
         let devicesEndPoint: EndPoint = .devices
         XCTAssertEqual(devicesEndPoint.headerItems, [:])
-        XCTAssertEqual(devicesEndPoint.path, "test/devices")
+        XCTAssertEqual(devicesEndPoint.path, "/test/devices")
         XCTAssertEqual(devicesEndPoint.method, .GET)
         XCTAssertEqual(devicesEndPoint.queryItems, [])
     }

@@ -13,7 +13,6 @@
 		4CCEFF7329D8D3A700E82316 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7229D8D3A700E82316 /* Tools.swift */; };
 		4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */; };
 		4CCEFF7729D9E5FA00E82316 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */; };
-		4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEFF7829DA370C00E82316 /* Indicator.swift */; };
 		4CD1166929D6384100626FB6 /* CosmoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166829D6384100626FB6 /* CosmoAppApp.swift */; };
 		4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1166A29D6384100626FB6 /* ContentView.swift */; };
 		4CD1166D29D6384300626FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1166C29D6384300626FB6 /* Assets.xcassets */; };
@@ -58,6 +57,7 @@
 		4CD5B86229E4396200C594FA /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86129E4396200C594FA /* Data+Extensions.swift */; };
 		4CD5B86429E4397D00C594FA /* BluetoothParcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */; };
 		4CD5B86629E439A200C594FA /* NearbyDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */; };
+		4CD5B87529E43E6900C594FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5B87729E43E6900C594FA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,6 @@
 		4CCEFF7229D8D3A700E82316 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
-		4CCEFF7829DA370C00E82316 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		4CD1166529D6384100626FB6 /* CosmoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD1166829D6384100626FB6 /* CosmoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmoAppApp.swift; sourceTree = "<group>"; };
 		4CD1166A29D6384100626FB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +132,8 @@
 		4CD5B86129E4396200C594FA /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothParcer.swift; sourceTree = "<group>"; };
 		4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDevicesViewModel.swift; sourceTree = "<group>"; };
+		4CD5B87629E43E6900C594FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CD5B87829E43E6D00C594FA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +168,6 @@
 				4CCEFF6E29D89AA500E82316 /* DevicesView.swift */,
 				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
-				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
 				4CD5B84F29E242E900C594FA /* NearbyDevicesView.swift */,
 			);
 			path = Views;
@@ -207,6 +207,7 @@
 				4CD1166829D6384100626FB6 /* CosmoAppApp.swift */,
 				4CCEFF7229D8D3A700E82316 /* Tools.swift */,
 				4CD1166E29D6384300626FB6 /* Preview Content */,
+				4CD5B87729E43E6900C594FA /* Localizable.strings */,
 			);
 			path = CosmoApp;
 			sourceTree = "<group>";
@@ -427,6 +428,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 4CD1165C29D6384100626FB6;
 			productRefGroup = 4CD1166629D6384100626FB6 /* Products */;
@@ -445,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD5B87529E43E6900C594FA /* Localizable.strings in Resources */,
 				4CD1167029D6384300626FB6 /* Preview Assets.xcassets in Resources */,
 				4CD1166D29D6384300626FB6 /* Assets.xcassets in Resources */,
 			);
@@ -487,7 +490,6 @@
 				4CD116A629D648B400626FB6 /* LightMode.swift in Sources */,
 				4CD116A129D6484000626FB6 /* Output.swift in Sources */,
 				4CD116B929D78CA200626FB6 /* HTTPMethod.swift in Sources */,
-				4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */,
 				4CD116C229D78EE000626FB6 /* URLSession+Extension.swift in Sources */,
 				4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */,
 				4CD5B85029E242E900C594FA /* NearbyDevicesView.swift in Sources */,
@@ -551,6 +553,18 @@
 			targetProxy = 4CD1168529D6384300626FB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CD5B87729E43E6900C594FA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD5B87629E43E6900C594FA /* en */,
+				4CD5B87829E43E6D00C594FA /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4CD1168C29D6384300626FB6 /* Debug */ = {
@@ -684,6 +698,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,6 +730,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

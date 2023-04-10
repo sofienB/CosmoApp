@@ -21,11 +21,11 @@ struct DevicesView: View {
                 case .loading:
                     ProgressView()
                 case .failed(_):
-                    Text(NSLocalizedString("No device found.", comment: "nil"))
+                    Text(NSLocalizedString("no device found", comment: ""))
                 default:
                     EmptyView()
                 }
-                Button(NSLocalizedString("Nearby devices", comment: "")) {
+                Button(NSLocalizedString("nearby devices", comment: "")) {
                     showingSheet.toggle()
                 }
                 .sheet(isPresented: $showingSheet) {
@@ -37,14 +37,14 @@ struct DevicesView: View {
                 .foregroundColor(.blue)
                 .frame(maxHeight: .infinity, alignment: .bottom)
             }
-            .navigationTitle(NSLocalizedString("My devices", comment: ""))
+            .navigationTitle(NSLocalizedString("my devices", comment: ""))
             .tint(.blue)
         }
         .task { await devicesViewModel.getDevices() }
-        .alert("An error occurred",
+        .alert(NSLocalizedString("an error occurred", comment: ""),
                isPresented: $devicesViewModel.showsAlert,
                presenting: devicesViewModel.state,
-               actions: { _ in Button("OK") { } },
+               actions: { _ in Button(NSLocalizedString("ok", comment: "")) { } },
                message: { detail in
                 if case let .failed(error) = detail {
                     Text(error.localizedDescription)

@@ -28,19 +28,20 @@ struct NearbyDevicesView: View {
     var body: some View {
         NavigationView {
             contentView
-                .navigationTitle("Devices")
+                .navigationTitle(NSLocalizedString("devices", comment: ""))
                 .alert(viewModel.connectionState.description,
                        isPresented: $viewModel.showsAlert,
                        actions: {
                     if viewModel.connectionState != .disconnected {
-                        Button(NSLocalizedString("Cancel", comment: ""), role: .cancel) {
+                        Button(NSLocalizedString("cancel", comment: ""), role: .cancel) {
                             viewModel.stop()
                         }
                     } else {
-                        Button(NSLocalizedString("OK", comment: ""), role: .none, action: {})
+                        Button(NSLocalizedString("ok", comment: ""), role: .none, action: {})
                     }
                 }, message: {
-                    Text(viewModel.selectedPeripheral?.name ?? "\"Unkown device\"")
+                    Text(viewModel.selectedPeripheral?.name ??
+                         "\"\(NSLocalizedString("unkown device", comment: ""))\"")
                 })
         }
         .onAppear {
@@ -82,7 +83,7 @@ struct NearbyDevicesView: View {
                 
                         ForEach(bluetoothParcer.values, id: \.self) { value in
                             Section(header:
-                                        Text(NSLocalizedString("Characteristics", comment: ""))
+                                        Text("Characteristics")
                                             .foregroundColor(.white)
                                             .font(.title3)
                             ) {
@@ -95,7 +96,7 @@ struct NearbyDevicesView: View {
                 }
             }
         } else {
-            Text("Please enable bluetooth to search devices")
+            Text(NSLocalizedString("please enable bluetooth to search devices", comment: ""))
         }
     }
 }
