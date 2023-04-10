@@ -51,6 +51,13 @@
 		4CD5B84929E170AC00C594FA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84829E170AC00C594FA /* Cell.swift */; };
 		4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */; };
 		4CD5B84E29E1A2FB00C594FA /* LinearCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */; };
+		4CD5B85029E242E900C594FA /* NearbyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B84F29E242E900C594FA /* NearbyDevicesView.swift */; };
+		4CD5B85429E2D91100C594FA /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B85329E2D91100C594FA /* BluetoothManager.swift */; };
+		4CD5B85629E2D93500C594FA /* BluetoothState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B85529E2D93500C594FA /* BluetoothState.swift */; };
+		4CD5B85A29E2D95500C594FA /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B85929E2D95500C594FA /* ConnectionState.swift */; };
+		4CD5B86229E4396200C594FA /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86129E4396200C594FA /* Data+Extensions.swift */; };
+		4CD5B86429E4397D00C594FA /* BluetoothParcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */; };
+		4CD5B86629E439A200C594FA /* NearbyDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +125,14 @@
 		4CD5B84829E170AC00C594FA /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeviceView.swift; sourceTree = "<group>"; };
 		4CD5B84D29E1A2FB00C594FA /* LinearCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearCellView.swift; sourceTree = "<group>"; };
+		4CD5B84F29E242E900C594FA /* NearbyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDevicesView.swift; sourceTree = "<group>"; };
+		4CD5B85329E2D91100C594FA /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		4CD5B85529E2D93500C594FA /* BluetoothState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothState.swift; sourceTree = "<group>"; };
+		4CD5B85929E2D95500C594FA /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
+		4CD5B85F29E2EC6B00C594FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4CD5B86129E4396200C594FA /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothParcer.swift; sourceTree = "<group>"; };
+		4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDevicesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +168,7 @@
 				4CD5B84A29E174A700C594FA /* DetailDeviceView.swift */,
 				4CCEFF7629D9E5FA00E82316 /* CollectionView.swift */,
 				4CCEFF7829DA370C00E82316 /* Indicator.swift */,
+				4CD5B84F29E242E900C594FA /* NearbyDevicesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,17 +196,17 @@
 		4CD1166729D6384100626FB6 /* CosmoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CD5B85F29E2EC6B00C594FA /* Info.plist */,
+				4CD5B85229E2D90400C594FA /* Bluetooth */,
+				4CD5B85129E2CE9100C594FA /* AppSettings */,
 				4CD5B84C29E176C600C594FA /* ViewModels */,
 				4C8E6D9F29DCBDA400C6B60D /* Views */,
 				4CD116B329D7863A00626FB6 /* Network */,
 				4CD1169729D6385700626FB6 /* DataModel */,
+				4CD5B86029E4394800C594FA /* Extensions */,
 				4CD1166829D6384100626FB6 /* CosmoAppApp.swift */,
-				4CD1166A29D6384100626FB6 /* ContentView.swift */,
-				4CD1166C29D6384300626FB6 /* Assets.xcassets */,
-				4CD1167129D6384300626FB6 /* Persistence.swift */,
-				4CD1167329D6384300626FB6 /* CosmoApp.xcdatamodeld */,
-				4CD1166E29D6384300626FB6 /* Preview Content */,
 				4CCEFF7229D8D3A700E82316 /* Tools.swift */,
+				4CD1166E29D6384300626FB6 /* Preview Content */,
 			);
 			path = CosmoApp;
 			sourceTree = "<group>";
@@ -198,6 +214,7 @@
 		4CD1166E29D6384300626FB6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4CD1166A29D6384100626FB6 /* ContentView.swift */,
 				4CD1166F29D6384300626FB6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -290,8 +307,38 @@
 			children = (
 				4CCEFF7429D9E59400E82316 /* DevicesViewModel.swift */,
 				4C8E6DA029DCBF3D00C6B60D /* DeviceDetailViewModel.swift */,
+				4CD5B86529E439A200C594FA /* NearbyDevicesViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4CD5B85129E2CE9100C594FA /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				4CD1166C29D6384300626FB6 /* Assets.xcassets */,
+				4CD1167129D6384300626FB6 /* Persistence.swift */,
+				4CD1167329D6384300626FB6 /* CosmoApp.xcdatamodeld */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		4CD5B85229E2D90400C594FA /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5B85329E2D91100C594FA /* BluetoothManager.swift */,
+				4CD5B85529E2D93500C594FA /* BluetoothState.swift */,
+				4CD5B85929E2D95500C594FA /* ConnectionState.swift */,
+				4CD5B86329E4397D00C594FA /* BluetoothParcer.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		4CD5B86029E4394800C594FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CD5B86129E4396200C594FA /* Data+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,12 +472,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD116AA29D648DA00626FB6 /* Device.swift in Sources */,
+				4CD5B85A29E2D95500C594FA /* ConnectionState.swift in Sources */,
 				4CD1169D29D6433900626FB6 /* LightValue.swift in Sources */,
 				4CD116B529D78A8500626FB6 /* BaseUrl.swift in Sources */,
 				4CD5B84B29E174A700C594FA /* DetailDeviceView.swift in Sources */,
 				4CD116C029D78DD500626FB6 /* Networking.swift in Sources */,
 				4CD1167229D6384300626FB6 /* Persistence.swift in Sources */,
 				4CD116AC29D64A3900626FB6 /* NetworkResult.swift in Sources */,
+				4CD5B85429E2D91100C594FA /* BluetoothManager.swift in Sources */,
 				4CCEFF7329D8D3A700E82316 /* Tools.swift in Sources */,
 				4CD116BE29D78DAC00626FB6 /* NetworkingError.swift in Sources */,
 				4CD116BC29D78CEF00626FB6 /* Networking+Extension.swift in Sources */,
@@ -441,10 +490,15 @@
 				4CCEFF7929DA370C00E82316 /* Indicator.swift in Sources */,
 				4CD116C229D78EE000626FB6 /* URLSession+Extension.swift in Sources */,
 				4CD1166B29D6384100626FB6 /* ContentView.swift in Sources */,
+				4CD5B85029E242E900C594FA /* NearbyDevicesView.swift in Sources */,
 				4C8E6DA129DCBF3D00C6B60D /* DeviceDetailViewModel.swift in Sources */,
+				4CD5B86229E4396200C594FA /* Data+Extensions.swift in Sources */,
 				4CD1166929D6384100626FB6 /* CosmoAppApp.swift in Sources */,
+				4CD5B86629E439A200C594FA /* NearbyDevicesViewModel.swift in Sources */,
 				4CCEFF7529D9E59400E82316 /* DevicesViewModel.swift in Sources */,
+				4CD5B85629E2D93500C594FA /* BluetoothState.swift in Sources */,
 				4CCEFF6F29D89AA500E82316 /* DevicesView.swift in Sources */,
+				4CD5B86429E4397D00C594FA /* BluetoothParcer.swift in Sources */,
 				4CD1167529D6384300626FB6 /* CosmoApp.xcdatamodeld in Sources */,
 				4CD116A829D648C900626FB6 /* InstallationMode.swift in Sources */,
 				4CD116B729D78AE400626FB6 /* EndPoint.swift in Sources */,
@@ -624,6 +678,8 @@
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CosmoApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth used to find and connect device to product";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Cosmo.CosmoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ccapp.benharchache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -653,6 +709,8 @@
 				DEVELOPMENT_TEAM = F8JRW6YF7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CosmoApp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth used to find and connect device to product";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -663,7 +721,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Cosmo.CosmoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ccapp.benharchache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

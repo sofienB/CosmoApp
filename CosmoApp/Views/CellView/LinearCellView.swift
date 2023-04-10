@@ -17,16 +17,18 @@ struct LinearCellView: View {
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity,
                        alignment: .leading)
+                .foregroundColor(.white)
             Text(cell.subTitle)
                 .font(.custom("Copperplate", size: 16))
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity,
                        alignment: .trailing)
+                .foregroundColor(.white)
         }
         .padding(.all, 5)
-        .background(.quaternary)
+        .background(.primary)
         .cornerRadius(10)
-        .foregroundColor(.blue)
+        .foregroundColor(.blue.opacity(0.2))
     }
 }
 

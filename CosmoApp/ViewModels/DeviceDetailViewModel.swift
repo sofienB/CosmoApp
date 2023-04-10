@@ -20,7 +20,7 @@ final class DeviceDetailViewModel: ObservableObject {
         guard let device else { return }
         
         details.append(Cell(title: Tools.imageName(of: device.model) ,
-                            subTitle: NSLocalizedString("model", comment: ""),
+                            subTitle: device.model.rawValue,
                             asImage: true,
                             drawableAs: Drawable.grid))
 

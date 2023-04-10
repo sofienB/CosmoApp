@@ -20,30 +20,31 @@ struct CardCellView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(minWidth: 100, maxWidth: 120,
                            minHeight: 80, maxHeight: 90)
-                    .clipped()
+                    .clipped() .foregroundColor(.white)
             } else {
                 Text(cell.title)
                     .font(.custom("Copperplate", size: 38))
                     .fontWeight(.bold)
                     .frame(minWidth: 100, maxWidth: .infinity,
-                           minHeight: 50, maxHeight: .infinity)
+                           minHeight: 50, maxHeight: 50)
+                    .foregroundColor(.white)
             }
             Spacer()
             Text(cell.subTitle)
                 .font(.custom("Copperplate", size: 25))
                 .fontWeight(.bold)
                 .frame(minWidth: 100, maxWidth: .infinity,
-                       minHeight: 50, maxHeight: 50)
+                       minHeight: 50, maxHeight: 50) .foregroundColor(.white)
         }
-        .background(.quaternary)
+        .background(.primary)
         .cornerRadius(10)
-        .foregroundColor(.blue)
+        .foregroundColor(.blue.opacity(0.2))
     }
 }
 
 struct CardCellView_Previews: PreviewProvider {
     static var previews: some View {
-        var cell: Cell = Cell(title:"vision",
+        let cell: Cell = Cell(title:"vision",
                                    subTitle: "VISION",
                                    asImage: true,
                                    drawableAs: .grid)
@@ -53,17 +54,22 @@ struct CardCellView_Previews: PreviewProvider {
                                        asImage: false,
                                        drawableAs: .grid)
         
-        var cell3: Cell = Cell(title:"brake",
+        let cell3: Cell = Cell(title:"brake",
                                    subTitle: "ON",
                                    asImage: true,
                                    drawableAs: .grid)
         
-        var cell4: Cell = Cell(title:"warning",
+        let cell4: Cell = Cell(title:"warning",
                                subTitle: "warning",
                                asImage: true,
                                drawableAs: .grid)
         
-        CardCellView(cell: cell4).frame(width: 198, height: 80)
+        let cell5: Cell = Cell(title:"both",
+                               subTitle: "both",
+                               asImage: true,
+                               drawableAs: .grid)
+        
+        CardCellView(cell: cell5).frame(width: 198, height: 80)
             .previewLayout(.fixed(width: 260, height: 200))
     }
 }

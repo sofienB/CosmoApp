@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DevicesView: View {
     @StateObject var devicesViewModel: DevicesViewModel
-    
+    @State private var showingSheet = false
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,7 +26,10 @@ struct DevicesView: View {
                     EmptyView()
                 }
                 Button(NSLocalizedString("Nearby devices", comment: "")) {
-
+                    showingSheet.toggle()
+                }
+                .sheet(isPresented: $showingSheet) {
+                    NearbyDevicesView()
                 }
                 .padding()
                 .background(.quaternary)
